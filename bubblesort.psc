@@ -24,14 +24,18 @@ Algoritmo bubblesort
 					sal=Falso;
 					j=i;
 				SiNo
+					
 					sal=Verdadero;
 				FinSi
 			FinPara
 		FinMientras
+		ar1[i]=temp
 		sal=falso;
 		FinSi
-	
 	FinPara
+	
+	Escribir "array creado"
+	Escribir "pepe"
 	//ordenar array
 	Mientras sal=Falso Hacer
 		Para i=1 Hasta 5 Hacer
@@ -41,17 +45,19 @@ Algoritmo bubblesort
 				Si var1>var2 Entonces
 					cam=cam+1;
 					ar1[i]=var2;
-					ar1[i]=var1;
+					ar1[i+1]=var1;
 				FinSi
 			FinSi
 		FinPara
 		si cam==0 Entonces
 			sal=Verdadero;
+		SiNo
+			cam=0;
 		FinSi
 	FinMientras
 	
 	//Mostrar array
-	Para i=0 Hasta 5 Con Paso 1 Hacer
+	Para i=1 Hasta 5 Con Paso 1 Hacer
 		Escribir "Posicion " i " : " ar1[i];
 	FinPara
 FinAlgoritmo
