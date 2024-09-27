@@ -11,7 +11,7 @@ Algoritmo simpson
 	cont=0;
 	Para i=1 hasta 5 Hacer
 		para j=1 Hasta 5 Hacer
-				tabsim[i, j]=" ";
+				tabsim[i, j]="0";
 		FinPara
 	FinPara
 	//hommers
@@ -19,8 +19,8 @@ Algoritmo simpson
 		Para i=1 hasta 5 Hacer
 			para j=1 Hasta 5 Hacer
 				rand=azar(2);
-				si rand=1 y tabsim[i, j]==" " Entonces
-					tabsim[i, j]="Homer";
+				si rand=1 y tabsim[i, j]=="0" Entonces
+					tabsim[i, j]="H";
 					cont=cont+1;
 					si cont=5 Entonces
 						i=5;
@@ -34,8 +34,8 @@ Algoritmo simpson
 	Mientras sal=Falso Hacer
 		bartX=azar(4)+1;
 		bartY=azar(4)+1;
-		si tabsim[bartX, bartY]==" " Entonces
-			tabsim[bartX, bartY]="bart";
+		si tabsim[bartX, bartY]=="0" Entonces
+			tabsim[bartX, bartY]="B";
 			sal=Verdadero;
 		FinSi
 	FinMientras
