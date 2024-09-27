@@ -42,7 +42,7 @@ Algoritmo simpson
 	
 	//Mostrar tablero
 	Para i=1 hasta 5 Hacer
-		Escribir Sin Saltar i;
+		Escribir Sin Saltar i " ";
 		para j=1 Hasta 5 Hacer
 			Escribir Sin Saltar tabsim[i, j] " ";
 		FinPara
