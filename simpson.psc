@@ -52,6 +52,7 @@ Algoritmo simpson
 	//		FinPara
 	//		Escribir "";
 	//	FinPara
+
 	//Bucle de juego
 	sal=Falso;
 	vidas=5;
